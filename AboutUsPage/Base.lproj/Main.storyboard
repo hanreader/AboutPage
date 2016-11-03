@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutUsPage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,120 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsu-ta-dat">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="vSy-Sl-yTu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JT7-3g-Nm2">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="CdC-RX-N6B"/>
+                                </constraints>
+                                <state key="normal" title="Twitter"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cdr-CU-k2K" appends="YES" id="ZAf-oi-TSW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJM-zr-yS7">
+                                <gestureRecognizers/>
+                                <state key="normal" title="Instagram"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DWN-il-jXL" appends="YES" id="TGy-2r-bwR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU0-e2-Pc5">
+                                <gestureRecognizers/>
+                                <state key="normal" title="Facebook"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uwa-lD-fc5" appends="YES" id="5aY-nf-YiE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHx-Gw-EDZ">
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <string key="text">Located in Francis Lewis High School and established on October 2015, MatchWear is a company that provides customers with outfits that are fashionable and suited to their unique styles.
+​
+Customers have the ability to choose from our five categories casual, formal, edgy, preppy, and hipster.
+​
+​Outfits are created by our industry leading stylists and will guarantee customer satisfaction. Our goal is to make our customers feel more confident and fashionable. ​</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkU-Lg-p0D">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="G6w-ud-5Y7"/>
+                                </constraints>
+                                <string key="text">Address
+​58-20 Utopia Pkwy
+Fresh Meadows, NY 11365
+            
+Email
+matchwearve@gmail.com​
+
+Phone Number
+718-527-8297</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtT-FI-0PV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="GHW-cO-aaO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQy-sq-UJA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="0xD-gb-tnq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pQy-sq-UJA" firstAttribute="leading" secondItem="QHx-Gw-EDZ" secondAttribute="leading" id="1Ds-T7-cAQ"/>
+                            <constraint firstItem="FtT-FI-0PV" firstAttribute="centerX" secondItem="JT7-3g-Nm2" secondAttribute="centerX" id="2bT-jS-Qq2"/>
+                            <constraint firstItem="Tsu-ta-dat" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="2hV-Q6-84K"/>
+                            <constraint firstItem="JT7-3g-Nm2" firstAttribute="baseline" secondItem="JJM-zr-yS7" secondAttribute="baseline" id="5RW-nC-GP7"/>
+                            <constraint firstItem="JT7-3g-Nm2" firstAttribute="leading" secondItem="qU0-e2-Pc5" secondAttribute="trailing" constant="57" id="DE6-34-NiZ"/>
+                            <constraint firstItem="FtT-FI-0PV" firstAttribute="centerX" secondItem="kkU-Lg-p0D" secondAttribute="centerX" id="L8Z-gr-t1a"/>
+                            <constraint firstItem="Tsu-ta-dat" firstAttribute="trailing" secondItem="QHx-Gw-EDZ" secondAttribute="trailing" id="Leu-MP-eHR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JJM-zr-yS7" secondAttribute="bottom" constant="136" id="Mo4-x0-vAF"/>
+                            <constraint firstItem="QHx-Gw-EDZ" firstAttribute="trailing" secondItem="kkU-Lg-p0D" secondAttribute="trailing" id="Ozs-Ih-coK"/>
+                            <constraint firstItem="pQy-sq-UJA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QTu-bf-QPj"/>
+                            <constraint firstItem="pQy-sq-UJA" firstAttribute="trailing" secondItem="QHx-Gw-EDZ" secondAttribute="trailing" id="Qq4-GH-PaI"/>
+                            <constraint firstItem="JJM-zr-yS7" firstAttribute="leading" secondItem="JT7-3g-Nm2" secondAttribute="trailing" constant="58" id="Scm-zW-lUg"/>
+                            <constraint firstItem="pQy-sq-UJA" firstAttribute="top" secondItem="QHx-Gw-EDZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Y1K-rk-2cc"/>
+                            <constraint firstItem="Tsu-ta-dat" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Zg5-4I-ydm"/>
+                            <constraint firstItem="qU0-e2-Pc5" firstAttribute="top" secondItem="kkU-Lg-p0D" secondAttribute="bottom" constant="8" symbolic="YES" id="a5h-I1-QS7"/>
+                            <constraint firstItem="QHx-Gw-EDZ" firstAttribute="leading" secondItem="kkU-Lg-p0D" secondAttribute="leading" id="dXZ-kv-s7m"/>
+                            <constraint firstItem="qU0-e2-Pc5" firstAttribute="baseline" secondItem="JT7-3g-Nm2" secondAttribute="baseline" id="geX-tq-x7f"/>
+                            <constraint firstItem="QHx-Gw-EDZ" firstAttribute="top" secondItem="Tsu-ta-dat" secondAttribute="bottom" constant="8" symbolic="YES" id="gm5-nw-Brr"/>
+                            <constraint firstItem="FtT-FI-0PV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="82" id="kEG-m3-ttB"/>
+                            <constraint firstItem="Tsu-ta-dat" firstAttribute="leading" secondItem="QHx-Gw-EDZ" secondAttribute="leading" id="lZC-wd-8cT"/>
+                            <constraint firstItem="qU0-e2-Pc5" firstAttribute="leading" secondItem="kkU-Lg-p0D" secondAttribute="leading" id="rlK-O9-WiR"/>
+                            <constraint firstItem="JJM-zr-yS7" firstAttribute="trailing" secondItem="kkU-Lg-p0D" secondAttribute="trailing" id="vT8-TY-zM7"/>
+                            <constraint firstItem="FtT-FI-0PV" firstAttribute="top" secondItem="qU0-e2-Pc5" secondAttribute="bottom" constant="8" symbolic="YES" id="x5I-7y-wcc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="pz1-B4-3YO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="b4w-8n-UGT"/>
+                <tapGestureRecognizer id="uwa-lD-fc5"/>
+                <tapGestureRecognizer id="cdr-CU-k2K"/>
+                <tapGestureRecognizer id="DWN-il-jXL"/>
             </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>

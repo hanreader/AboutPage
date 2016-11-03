@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		959E0DA91DBE44B700024C9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E0DA81DBE44B700024C9A /* AppDelegate.swift */; };
-		959E0DAB1DBE44B700024C9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E0DAA1DBE44B700024C9A /* ViewController.swift */; };
+		959E0DAB1DBE44B700024C9A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E0DAA1DBE44B700024C9A /* AboutUsViewController.swift */; };
 		959E0DAE1DBE44B700024C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959E0DAC1DBE44B700024C9A /* Main.storyboard */; };
 		959E0DB01DBE44B700024C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959E0DAF1DBE44B700024C9A /* Assets.xcassets */; };
 		959E0DB31DBE44B700024C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959E0DB11DBE44B700024C9A /* LaunchScreen.storyboard */; };
 		959E0DBE1DBE44B700024C9A /* AboutUsPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E0DBD1DBE44B700024C9A /* AboutUsPageTests.swift */; };
+		95ED8E0B1DC788F300E37A44 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E0DAA1DBE44B700024C9A /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,7 @@
 /* Begin PBXFileReference section */
 		959E0DA51DBE44B700024C9A /* AboutUsPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutUsPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959E0DA81DBE44B700024C9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		959E0DAA1DBE44B700024C9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		959E0DAA1DBE44B700024C9A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		959E0DAD1DBE44B700024C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		959E0DAF1DBE44B700024C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		959E0DB21DBE44B700024C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				959E0DA81DBE44B700024C9A /* AppDelegate.swift */,
-				959E0DAA1DBE44B700024C9A /* ViewController.swift */,
+				959E0DAA1DBE44B700024C9A /* AboutUsViewController.swift */,
 				959E0DAC1DBE44B700024C9A /* Main.storyboard */,
 				959E0DAF1DBE44B700024C9A /* Assets.xcassets */,
 				959E0DB11DBE44B700024C9A /* LaunchScreen.storyboard */,
@@ -199,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				959E0DAB1DBE44B700024C9A /* ViewController.swift in Sources */,
+				959E0DAB1DBE44B700024C9A /* AboutUsViewController.swift in Sources */,
 				959E0DA91DBE44B700024C9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95ED8E0B1DC788F300E37A44 /* AboutUsViewController.swift in Sources */,
 				959E0DBE1DBE44B700024C9A /* AboutUsPageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +408,7 @@
 				959E0DC41DBE44B700024C9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		959E0DC51DBE44B700024C9A /* Build configuration list for PBXNativeTarget "AboutUsPageTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +417,7 @@
 				959E0DC71DBE44B700024C9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
