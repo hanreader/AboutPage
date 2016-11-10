@@ -42,6 +42,8 @@ class AboutUsViewController: UIViewController {
 //            UIApplication.shared.open(url, options: options, completionHandler:nil)
 //        }
 //    }
+    
+    //Actions and methods
 
     @IBAction func didTapFacebook(sender: UIButton) {
         if let url = NSURL(string: "http://www.facebook.com/MatchWear-1638094356470603/info?tab=overview"){
@@ -49,7 +51,16 @@ class AboutUsViewController: UIViewController {
         }
     }
     
-    
+    @IBAction func didTapTwitter(sender: UIButton) {
+        if let url = NSURL(string: "http://twitter.com/matchwearve?lang=en"){
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+    }
+    @IBAction func didTapInstagram(sender: UIButton) {
+        if let url = NSURL(string: "http://www.instagram.com/matchwearve/"){
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+    }
     
     
     
