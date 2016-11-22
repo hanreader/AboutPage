@@ -3,16 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutUsPage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AboutUsViewController" customModule="AboutUsPage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,49 +18,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsu-ta-dat">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="iR5-Zs-JJi"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsu-ta-dat">
+                                <frame key="frameInset" minX="16" minY="53" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JT7-3g-Nm2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JT7-3g-Nm2">
+                                <frame key="frameInset" minX="156" minY="601" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="63" id="lEA-Kf-tbY"/>
-                                </constraints>
                                 <state key="normal" title="Twitter"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="cdr-CU-k2K" appends="YES" id="ZAf-oi-TSW"/>
+                                    <action selector="twitterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AfG-kc-pdy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJM-zr-yS7">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJM-zr-yS7">
+                                <frame key="frameInset" minX="277" minY="601" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <state key="normal" title="Instagram"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="DWN-il-jXL" appends="YES" id="TGy-2r-bwR"/>
+                                    <action selector="instagramButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ldk-a4-FcF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU0-e2-Pc5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU0-e2-Pc5">
+                                <frame key="frameInset" minX="16" minY="601" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" link="YES"/>
                                 </accessibility>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ob4-na-Ppv"/>
-                                </constraints>
                                 <state key="normal" title="Facebook"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="uwa-lD-fc5" appends="YES" id="5aY-nf-YiE"/>
+                                    <action selector="facebookButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNe-d6-coD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHx-Gw-EDZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHx-Gw-EDZ">
+                                <frame key="frameInset" minX="16" minY="113" width="343" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="158" id="6vY-dZ-KHR"/>
-                                </constraints>
                                 <string key="text">Located in Francis Lewis High School and established on October 2015, MatchWear is a company that provides customers with outfits that are fashionable and suited to their unique styles.
 ​
 Customers have the ability to choose from our five categories casual, formal, edgy, preppy, and hipster.
@@ -73,7 +68,9 @@ Customers have the ability to choose from our five categories casual, formal, ed
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkU-Lg-p0D">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkU-Lg-p0D">
+                                <frame key="frameInset" minX="16" minY="329" width="343" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Address
 ​58-20 Utopia Pkwy
 Fresh Meadows, NY 11365
@@ -87,49 +84,27 @@ Phone Number
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQy-sq-UJA">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="S03-mQ-Nba"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQy-sq-UJA">
+                                <frame key="frameInset" minX="16" minY="329" width="343" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZ2-2t-nYB">
+                                <frame key="frameInset" minY="20" width="375" height="658"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="QHx-Gw-EDZ" firstAttribute="top" secondItem="Tsu-ta-dat" secondAttribute="bottom" constant="8" symbolic="YES" id="6UI-Dq-FWt"/>
-                            <constraint firstItem="Tsu-ta-dat" firstAttribute="leading" secondItem="QHx-Gw-EDZ" secondAttribute="leading" id="7H1-s5-MOn"/>
-                            <constraint firstItem="qU0-e2-Pc5" firstAttribute="baseline" secondItem="JT7-3g-Nm2" secondAttribute="firstBaseline" id="8xk-wy-a4q"/>
-                            <constraint firstItem="JT7-3g-Nm2" firstAttribute="leading" secondItem="qU0-e2-Pc5" secondAttribute="trailing" constant="57" id="Drj-VI-R8X"/>
-                            <constraint firstItem="JJM-zr-yS7" firstAttribute="leading" secondItem="JT7-3g-Nm2" secondAttribute="trailing" constant="58" id="J2N-D2-2Bz"/>
-                            <constraint firstItem="pQy-sq-UJA" firstAttribute="trailing" secondItem="QHx-Gw-EDZ" secondAttribute="trailing" id="KhA-a3-bHM"/>
-                            <constraint firstItem="Tsu-ta-dat" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MFu-yH-9Le"/>
-                            <constraint firstItem="pQy-sq-UJA" firstAttribute="leading" secondItem="kkU-Lg-p0D" secondAttribute="leading" id="OIX-zY-wF3"/>
-                            <constraint firstItem="pQy-sq-UJA" firstAttribute="top" secondItem="QHx-Gw-EDZ" secondAttribute="bottom" constant="58" id="QLP-kT-rrr"/>
-                            <constraint firstItem="qU0-e2-Pc5" firstAttribute="firstBaseline" secondItem="JT7-3g-Nm2" secondAttribute="baseline" id="Qc9-gV-AVf"/>
-                            <constraint firstItem="Tsu-ta-dat" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="Wjn-H7-4nN"/>
-                            <constraint firstItem="pQy-sq-UJA" firstAttribute="top" secondItem="kkU-Lg-p0D" secondAttribute="top" id="cLp-dV-OyM"/>
-                            <constraint firstItem="Tsu-ta-dat" firstAttribute="trailing" secondItem="QHx-Gw-EDZ" secondAttribute="trailing" id="knq-pA-sZe"/>
-                            <constraint firstItem="pQy-sq-UJA" firstAttribute="leading" secondItem="QHx-Gw-EDZ" secondAttribute="leading" id="l7X-nC-hD4"/>
-                            <constraint firstItem="JT7-3g-Nm2" firstAttribute="centerX" secondItem="kkU-Lg-p0D" secondAttribute="centerX" id="lMJ-6a-uYN"/>
-                            <constraint firstItem="pQy-sq-UJA" firstAttribute="trailing" secondItem="kkU-Lg-p0D" secondAttribute="trailing" id="nIR-Bo-82w"/>
-                            <constraint firstItem="JJM-zr-yS7" firstAttribute="trailing" secondItem="kkU-Lg-p0D" secondAttribute="trailing" id="r5U-gk-Ea5"/>
-                            <constraint firstItem="JJM-zr-yS7" firstAttribute="top" secondItem="kkU-Lg-p0D" secondAttribute="bottom" constant="10" id="rjQ-WL-q6t"/>
-                            <constraint firstItem="qU0-e2-Pc5" firstAttribute="top" secondItem="JT7-3g-Nm2" secondAttribute="top" id="sq9-zE-3Mv"/>
-                            <constraint firstItem="Tsu-ta-dat" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uMR-AR-DlV"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JT7-3g-Nm2" secondAttribute="bottom" constant="36" id="ujM-xh-Pu9"/>
-                            <constraint firstItem="qU0-e2-Pc5" firstAttribute="leading" secondItem="kkU-Lg-p0D" secondAttribute="leading" id="v7p-hn-xfl"/>
-                            <constraint firstItem="JJM-zr-yS7" firstAttribute="top" secondItem="JT7-3g-Nm2" secondAttribute="top" id="wZc-0D-f9N"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="pz1-B4-3YO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="b4w-8n-UGT"/>
-                <tapGestureRecognizer id="uwa-lD-fc5"/>
                 <tapGestureRecognizer id="cdr-CU-k2K"/>
                 <tapGestureRecognizer id="DWN-il-jXL"/>
+                <tapGestureRecognizer id="uwa-lD-fc5"/>
             </objects>
             <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
         </scene>

@@ -32,37 +32,49 @@ class AboutUsViewController: UIViewController {
     }
     
     //MARK: Actions
-//    @IBAction func didTapFacebook(sender: UIButton) {
-//        let facebookLink = NSURL(string: "http://www.facebook.com/MatchWear-1638094356470603/info?tab=overview")
-//        UIApplication.shared.openURL((facebookLink)! as URL)
-//    }
     
-//    @IBAction func facebookLink(sender: UIButton) {
-//        if let NSUrl = NSURL(string: "http://www.facebook.com/MatchWear-1638094356470603/info?tab=overview") {
-//            UIApplication.shared.open(url, options: options, completionHandler:nil)
-//        }
-//    }
+    //Facebook Link: "http://www.facebook.com/MatchWear-1638094356470603/info?tab=overview"
+    //Twitter Link: "http://twitter.com/matchwearve?lang=en"
+    // Instagram Link: "http://www.instagram.com/matchwearve/"
     
-    //Actions and methods
 
-    @IBAction func didTapFacebook(sender: UIButton) {
-        if let url = NSURL(string: "http://www.facebook.com/MatchWear-1638094356470603/info?tab=overview"){
-            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+
+    
+    @IBAction func facebookButton(_ sender: AnyObject) {
+        let url = URL(string: "http://www.facebook.com/MatchWear-1638094356470603/info?tab=overview")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+        else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+
+    @IBAction func twitterButton(_ sender: AnyObject) {
+        let url = URL(string: "http://twitter.com/matchwearve?lang=en")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+        else {
+            UIApplication.shared.openURL(url)
         }
     }
     
-    @IBAction func didTapTwitter(sender: UIButton) {
-        if let url = NSURL(string: "http://twitter.com/matchwearve?lang=en"){
-            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+    @IBAction func instagramButton(_ sender: AnyObject) {
+        let url = URL(string: "http://www.instagram.com/matchwearve/")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
-    }
-    @IBAction func didTapInstagram(sender: UIButton) {
-        if let url = NSURL(string: "http://www.instagram.com/matchwearve/"){
-            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        else {
+            UIApplication.shared.openURL(url)
         }
+
     }
     
     
+    
+
+   
     
 }
 
